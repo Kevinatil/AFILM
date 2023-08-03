@@ -235,11 +235,12 @@ We use antibody structure data to do model finetuning. The task is contact map p
 ![img](media/contact.png)
 
 $$
-[Z^H;Z^L]=\text{model}(input),\\
 
-pred^H=\text{sigmoid}(Z^HW(Z^H)^T+b),\\
+(Z^H; Z^L)=\text{model}(input), \\
 
-pred^L=\text{sigmoid}(Z^LW(Z^L)^T+b),\\
+pred^H=\text{sigmoid}(Z^HW(Z^H)^T+b), \\
+
+pred^L=\text{sigmoid}(Z^LW(Z^L)^T+b), \\
 
 Loss=\text{BCE}(contact^H,pred^H)+\text{BCE}(contact^L,pred^L).
 
