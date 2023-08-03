@@ -145,7 +145,7 @@ python _check_data.py
 
 The structure of processed pickle file is
 
-```json
+```python
 {
     file: '<file name>',
     hseq: '<heavy sequence>',
@@ -233,11 +233,16 @@ Paired:
 We use antibody structure data to do model finetuning. The task is contact map prediction. Use pretrained model to extract features of input sequences, and use bilinear projection to predict the contact within heavy sequence and light sequence.
 
 ![img](media/contact.png)
+
 $$
 [Z^H;Z^L]=\text{model}(input),\\
+
 pred^H=\text{sigmoid}(Z^HW(Z^H)^T+b),\\
+
 pred^L=\text{sigmoid}(Z^LW(Z^L)^T+b),\\
+
 Loss=\text{BCE}(contact^H,pred^H)+\text{BCE}(contact^L,pred^L).
+
 $$
 
 
