@@ -243,6 +243,14 @@ $$ pred^L=\text{sigmoid}(Z^LW(Z^L)^T+b), $$
 $$ Loss=\text{BCE}(contact^H,pred^H)+\text{BCE}(contact^L,pred^L). $$
 
 
+## Pretrained Checkpoints
+
+We provide the pretrained checkpoints as follows.
+
+- [Pretrained Only](https://pcl-niezw.obs.cn-south-222.ai.pcl.cn/model_test/pretrain/part_logs/ckpt_0/mlm_ckpt-6000_100.ckpt?AWSAccessKeyId=JcHS86qwlc3BrAx9lL60&Expires=1691075345&response-content-disposition=inline&versionId=null&Signature=J4OAiSMVHvcPT7s//9WJZviqhIA%3D)
+
+- [Pretrained and Finetuned](https://pcl-niezw.obs.cn-south-222.ai.pcl.cn/model_test/pretrain/cont_logs/ckpt_0/cont_ckpt-467_100.ckpt?AWSAccessKeyId=JcHS86qwlc3BrAx9lL60&Expires=1691075487&response-content-disposition=inline&versionId=null&Signature=vumtqt3jHfH4fcUi0Tmucu1/CGg%3D)
+
 
 ## Experiments
 
